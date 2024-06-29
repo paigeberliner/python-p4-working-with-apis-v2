@@ -31,6 +31,7 @@ class Search:
         print(URL)
         response = requests.get(URL)
         return response.json()
+    
 
     def get_user_search_results(self, search_term):
         search_term_formatted = search_term.replace(" ", "+")
